@@ -59,7 +59,6 @@ return [
     'package_commands' => [
         'assets' => false,
         'config' => true,
-        'database' => false,
         'lang' => false,
         'resources' => false,
         'routes' => false,
