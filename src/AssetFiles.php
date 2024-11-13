@@ -1,13 +1,13 @@
 <?php
 
-namespace AhweatSean\PackageGenerator;
+namespace AhweatSean\AssetFiles;
 
-class PackageGenerator
+class AssetFiles
 {
     /**
      * Package name.
      */
-    private const PACKAGE_NAME = 'package-generator';
+    private const PACKAGE_NAME = 'asset-files';
 
     /**
      * Package version.
