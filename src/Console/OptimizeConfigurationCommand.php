@@ -1,6 +1,6 @@
 <?php
 
-namespace AhweatSean\PackageGenerator\Console;
+namespace AhweatSean\AssetFiles\Console;
 
 use Illuminate\Console\Command;
 

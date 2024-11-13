@@ -1,6 +1,6 @@
 <?php
 
-namespace AhweatSean\PackageGenerator\Console;
+namespace AhweatSean\AssetFiles\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -12,14 +12,14 @@ class ConfigInstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'package-generator:config-install';
+    protected $signature = 'asset-files:config-install';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Install the package-generator config files';
+    protected $description = 'Install the asset-files config files';
 
     /**
      * Execute the console command.
@@ -34,7 +34,7 @@ class ConfigInstallCommand extends Command
      */
     protected function config(): void
     {
-        (new Filesystem)->copy(__DIR__.'/../../config/package-generator.php', config_path('package-generator.php'));
+        (new Filesystem)->copy(__DIR__.'/../../config/asset-files.php', config_path('asset-files.php'));
 
         $this->info('The configuration file publishing process has been successfully completed.');
     }

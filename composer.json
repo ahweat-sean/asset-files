@@ -1,12 +1,12 @@
 {
-    "name": "ahweat-sean/package-generator",
-    "description": "Simple Package To Quickly Generate Basic Structure For Other Laravel Packages.",
+    "name": "ahweat-sean/asset-files",
+    "description": "Asset Files.",
     "license": "MIT",
     "type": "library",
     "version": "v0.0.0",
     "keywords": [
         "ahweat-sean",
-        "package-generator"
+        "asset-files"
     ],
     "authors": [
         {
@@ -15,10 +15,10 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/ahweat-sean/package-generator",
+    "homepage": "https://github.com/ahweat-sean/asset-files",
     "support": {
-        "issues": "https://github.com/ahweat-sean/package-generator/issues",
-        "source": "https://github.com/ahweat-sean/package-generator"
+        "issues": "https://github.com/ahweat-sean/asset-files/issues",
+        "source": "https://github.com/ahweat-sean/asset-files"
     },
     "require": {
         "php": "^8.2",
@@ -35,7 +35,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "AhweatSean\\PackageGenerator\\": "src/"
+            "AhweatSean\\AssetFiles\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -48,10 +48,10 @@
     "extra": {
         "laravel": {
             "aliases": {
-                "PackageGenerator": "AhweatSean\\PackageGenerator\\PackageGeneratorFacade"
+                "AssetFiles": "AhweatSean\\AssetFiles\\AssetFilesFacade"
             },
             "providers": [
-                "AhweatSean\\PackageGenerator\\PackageGeneratorServiceProvider"
+                "AhweatSean\\AssetFiles\\AssetFilesServiceProvider"
             ]
         }
     }
