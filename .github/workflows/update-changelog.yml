@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
         with:
           # Fetch entire history of repository to ensure release date can be
@@ -22,7 +22,7 @@ jobs:
           # is not out of date.
           ref: ${{ github.event.release.target_commitish }}
 
-      - name: Extract release date from git tag
+      - name: Extract Release Date From Git Tag
         id: release_date
         run: |
           # Get UNIX timestamp from git-tag
@@ -43,7 +43,7 @@ jobs:
           latest-version: ${{ github.event.release.tag_name }}
           compare-url-target-revision: ${{ github.event.release.target_commitish }}
 
-      - name: Commit updated CHANGELOG
+      - name: Commit Updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           # Push updated CHANGELOG to release target branch.
