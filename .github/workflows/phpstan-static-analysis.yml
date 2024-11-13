@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: php-actions/composer@v6
 
-      - name: PHPStan Static Analysis
+      - name: Phpstan Static Analysis
         uses: php-actions/phpstan@v3
         with:
           path: assets/ config/ src/

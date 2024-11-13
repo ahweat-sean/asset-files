@@ -6,16 +6,16 @@ jobs:
   normalize:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Normalize composer.json
+      - name: Normalize Composer.json
         run: |
           composer global config --no-plugins allow-plugins.ergebnis/composer-normalize true
           composer global require ergebnis/composer-normalize
           composer normalize
 
-      - name: Commit changes
+      - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Normalize Composer.json

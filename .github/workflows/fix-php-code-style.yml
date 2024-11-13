@@ -1,4 +1,4 @@
-name: Fix PHP Code Style
+name: Fix Php Code Style
 
 on: [pull_request]
 
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Set User
@@ -18,10 +18,10 @@ jobs:
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
 
-      - name: Fix PHP code style
+      - name: Fix Php Code Style
         uses: aglipanci/laravel-pint-action@latest
 
-      - name: Commit changes
+      - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Fix Styling
