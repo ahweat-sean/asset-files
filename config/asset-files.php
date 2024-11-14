@@ -43,7 +43,7 @@ return [
     */
 
     'package_commands' => [
-        'assets' => false,
+        'assets' => true,
         'config' => true,
     ],
 
