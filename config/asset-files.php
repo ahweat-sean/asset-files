@@ -45,7 +45,6 @@ return [
     'package_commands' => [
         'assets' => false,
         'config' => true,
-        'resources' => false,
         'routes' => false,
         'stubs' => false,
     ],
