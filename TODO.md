@@ -13,6 +13,7 @@
 
 ## In Progress
 
+- [ ] The **version** information contained in the **composer.json** file will be removed when a public package is made.
 - [ ] Example in progress todo.
 
 - - - - -
@@ -22,7 +23,6 @@
 - [x] **Package commands** in the **ServiceProvider.php** file will be checked.
 - [x] The **directories** in the package files will be added to the **php-stan-static-analysis.yml** file.
 - [x] The **package commands** in the **config/xx.php** file will be activated depending on the content of our package.
-- [x] The **version** information contained in the **composer.json** file will be removed when a public package is made.
 - [x] Example done todo.
 
 - - - - -
