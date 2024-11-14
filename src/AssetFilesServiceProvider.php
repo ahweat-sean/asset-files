@@ -35,7 +35,6 @@ class AssetFilesServiceProvider extends ServiceProvider
             Console\ConfigInstallCommand::class,
             Console\InstallCommand::class,
             Console\OptimizeConfigurationCommand::class,
-            Console\RoutesInstallCommand::class,
             Console\StubsInstallCommand::class,
         ]);
     }
