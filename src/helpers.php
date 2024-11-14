@@ -12,7 +12,7 @@ if (! function_exists('assetFilesPackageName')) {
 
 if (! function_exists('assetFilesPackageVersion')) {
     /**
-     * Asset  files package version.
+     * Asset files package version.
      */
     function assetFilesPackageVersion(): mixed
     {
@@ -22,7 +22,7 @@ if (! function_exists('assetFilesPackageVersion')) {
 
 if (! function_exists('assetFilesConfigValue')) {
     /**
-     * Asset  files config value.
+     * Asset files config value.
      */
     function assetFilesConfigValue(string $configKeyName = 'package_information.name'): mixed
     {
