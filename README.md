@@ -41,15 +41,6 @@ composer require ahweat-sean/asset-files
 
 - - - - -
 
-**Composer Dump Autoload**
-
-```bash
-composer dump-autoload
-
-```
-
-- - - - -
-
 **Publish All `asset-files` System Files**
 
 ```bash
